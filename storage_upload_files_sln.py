@@ -1,7 +1,5 @@
 #!/usr/bin/env python
 
-import sys
-
 # [START storage_upload_file]
 from google.cloud import storage
 
@@ -25,7 +23,7 @@ def upload_blobs(bucket_name: str, source_file_names: list, destination_blob_nam
 # [END storage_upload_file]
 
 if __name__ == "__main__":
-    from storage_create_bucket import create_bucket
+    from test.storage_create_bucket import create_bucket
     # 1. Create a bucket named "comp4312_studentid" on gcp
     bucket_name = "comp4312_1000"
     # Your code is here
