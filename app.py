@@ -93,8 +93,8 @@ def create_bk():
         create_bucket(bucket_name=bucket_name)
 
         return "Bucket {} created".format(bucket_name)
-    except NameError:
-        return "Bucket name is either existing or invalid format \n " + NameError
+    except:
+        return "Bucket name is either existing or invalid format"
 
 
 @app.route('/delete_bk', methods=['GET'])
