@@ -24,9 +24,9 @@ def download_blobs(bucket_name: str, source_blob_names: list, destination_file_n
 # [END storage_download_file]
 
 if __name__ == "__main__":
-    from test.storage_list_files import return_blobs
+    from storage_list_files import return_blobs
     # 1. List all files in the bucket "comp4312_studentID" on gcp and assign to source_blob_names
-    bucket_name = "comp4312_1000"
+    bucket_name = "comp4312_a2_0670448"
     source_blob_names = []
     # Your code is here
     source_blob_names = return_blobs(bucket_name)
@@ -54,7 +54,7 @@ if __name__ == "__main__":
                    destination_file_names=destination_file_names)
 
     # 4. Delete the bucket "comp4312_studentID" on gcp
-    from test.storage_delete_bucket import delete_bucket
+    from storage_delete_bucket import delete_bucket
     # Your code is here
     delete_bucket(bucket_name=bucket_name, force=True)
 
