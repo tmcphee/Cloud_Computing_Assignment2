@@ -1,4 +1,5 @@
-# COMP4312 Assignment 2
+# Cloud Computing - Assignment 2
+#### COMP-4312
 [Assignment 2](https://github.com/duytinvo/comp4312/tree/master/assignment2)
 
 1. Complete all preserved parts in [**app.py**](app.py) to build three endpoints:
